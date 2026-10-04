@@ -104,6 +104,28 @@
     .toolbar{position:static;justify-content:center;padding:14px;flex-wrap:wrap}
     .page{width:100%;grid-template-columns:1fr;margin:0}
   }
+
+  /* --- compactage pour tenir sur une seule page A4 --- */
+  .main{padding:8mm 12mm}
+  .name{font-size:31px}
+  .profile{margin-top:7px;line-height:1.5}
+  .sec{margin-top:4.5mm}
+  .sec-h{margin-bottom:3mm}
+  .item{margin-bottom:2.8mm}
+  .item::after{bottom:-2.8mm}
+  .item ul li{line-height:1.42;margin-bottom:1px}
+  .edu-item{margin-bottom:2.2mm}
+  .foot-note{margin-top:4.5mm;padding-top:3mm}
+  /* barre latérale resserrée */
+  .side-top{padding:8mm 7mm 5mm}
+  .avatar{width:31mm;height:31mm}
+  .side{padding-bottom:8mm}
+  .side-sec{padding-top:3.5mm}
+  .side-h{margin-bottom:2mm}
+  .contact-line{margin-bottom:1.6mm}
+  .skill-block{margin-bottom:1.8mm}
+  .lang-row{margin-bottom:1.4mm}
+  .interest{margin-bottom:1.2mm}
 </style>
 </head>
 <body>
@@ -139,12 +161,12 @@
 
     <div class="side-sec">
       <div class="side-h">Compétences</div>
-      <div class="skill-block"><div class="lab">Langages</div><div class="tags"><span class="tag">Python</span><span class="tag">C</span><span class="tag">SQL</span><span class="tag">HTML</span><span class="tag">CSS</span></div></div>
+      <div class="skill-block"><div class="lab">Langages</div><div class="tags"><span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">C</span><span class="tag">SQL</span><span class="tag">HTML</span><span class="tag">CSS</span></div></div>
       <div class="skill-block"><div class="lab">Cybersécurité</div><div class="tags"><span class="tag">OWASP ZAP</span><span class="tag">SOC / Blue team</span><span class="tag">Réseaux</span><span class="tag">Sécurité de l'IA</span></div></div>
       <div class="skill-block"><div class="lab">IA &amp; Data</div><div class="tags"><span class="tag">IA générative</span><span class="tag">RAG</span><span class="tag">Langflow</span><span class="tag">Prompt injection</span><span class="tag">Guardrails</span><span class="tag">GA4</span></div></div>
+      <div class="skill-block"><div class="lab">Dév. web &amp; Cloud</div><div class="tags"><span class="tag">React.js</span><span class="tag">API REST</span><span class="tag">Shopify</span><span class="tag">E-commerce</span><span class="tag">Linux</span><span class="tag">Serveurs</span></div></div>
       <div class="skill-block"><div class="lab">Outils</div><div class="tags"><span class="tag">Git / GitHub</span><span class="tag">VS Code</span><span class="tag">VirtualBox</span></div></div>
-      <div class="skill-block"><div class="lab">3D &amp; vidéo</div><div class="tags"><span class="tag">Magicavoxel</span><span class="tag">Tinkercad</span><span class="tag">Hitfilm</span></div></div>
-      <div class="skill-block"><div class="lab">Hardware</div><div class="tags"><span class="tag">Assemblage PC</span><span class="tag">Maintenance</span></div></div>
+      <div class="skill-block"><div class="lab">Créa &amp; hardware</div><div class="tags"><span class="tag">Magicavoxel</span><span class="tag">Tinkercad</span><span class="tag">Hitfilm</span><span class="tag">Assemblage PC</span><span class="tag">Maintenance</span></div></div>
     </div>
 
     <div class="side-sec">
@@ -170,6 +192,17 @@
     <section class="sec">
       <div class="sec-h"><span class="no">01</span><span class="t">Expérience</span><span class="rule"></span></div>
 
+      <div class="item">
+        <div class="item-head">
+          <div><span class="item-title">Développeur web — Freelance</span> — <span class="item-org">Projet entrepreneurial · e-commerce</span></div>
+          <span class="item-date">depuis juil. 2026 · À distance</span>
+        </div>
+        <ul>
+          <li>Développement d'<b>applications web</b> sur-mesure : <b>JavaScript / React.js</b>, <b>API REST</b> et intégrations <b>Shopify</b>.</li>
+          <li>Déploiement et administration de <b>serveurs Linux</b> ; conformité <b>RGPD</b>.</li>
+        </ul>
+      </div>
+
       <div class="item filled">
         <div class="item-head">
           <div><span class="item-title">Stagiaire Ingénieur CloudOps &amp; IA générative</span> — <span class="item-org"><span class="o">Orange</span>, DSI France</span></div>
@@ -177,9 +210,8 @@
         </div>
         <ul>
           <li>Automatisation de scans de vulnérabilités web (<b>OWASP ZAP</b>) avec exploitation des résultats assistée par IA.</li>
-          <li>Conception d'un outil de préparation documentaire « AI-friendly » pour fiabiliser un pipeline <b>RAG</b> et réduire les hallucinations.</li>
-          <li>Développement d'agents IA en architecture <b>multi-agents</b> (Langflow) et animation d'un séminaire de vulgarisation.</li>
-          <li>Sécurité des systèmes d'IA : tests de <b>prompt injection</b> et étude des garde-fous (guardrails).</li>
+          <li>Conception d'un outil de préparation documentaire « AI-friendly » pour fiabiliser un pipeline <b>RAG</b>.</li>
+          <li>Développement d'<b>agents IA multi-agents</b> (Langflow) et tests de sécurité des modèles (<b>prompt injection</b>, guardrails).</li>
         </ul>
       </div>
 
